@@ -2,7 +2,7 @@
 
 * Студент: [Евгения Косьяненко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2259141).
 * Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
-
+* Сайт: [Проект Седона](https://evgeniya-kosyanenko.github.io/2259141-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
