@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
 </head>
-
 <body>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="#" alt="Логотип Седоны">
+        <img class="page-header-logo" src="images/logo.png" width="134" height="64" alt="Логотип Седоны">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -26,16 +24,15 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Поиск
-            </span>
+            <img class="icon-search" src="images/search.svg" width="20" height="20" alt="Поиск"
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Избранное
-            </span>
+            <img class="icon-favourites" src="images/heart.svg" width="20" height="20" alt="Избранное"
+            <span class="visually-hidden">Избранное</span>
+            <span class="likes-number">12</span>
           </a>
         </li>
         <li class="navigation-item">
@@ -50,10 +47,12 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
-          <img src="#" alt="На главную">
+          <a class="breadcrumbs-link visually-hidden" href="index.html">
+          <img class="breadcrumbs-home" src="images/home.svg" width="13" height="15" alt="На главную">
+        </a>
         </li>
         <li class="breadcrumbs-item">
+          <img src="images/arrow-hotels.svg" width="7" height="10">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
@@ -118,10 +117,10 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="number" name="min" placeholder="0 от">
+                <input class="control-input" type="text" name="min" placeholder="0 от">
               </label>
               <label class="control">
-              <input class="control-input" type="number" name="max" placeholder="9000 до">
+              <input class="control-input" type="text" name="max" placeholder="9000 до">
             </label>
             </li>
           </ul>
@@ -130,21 +129,25 @@
         <button class="button" type="reset">Сбросить</button>
       </form>
       <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешёвое</option>
+        <option value="cheap">Сначала дешёвые</option>
+        <img src="images/arrow.svg" width="12" height="7">
       </select>
       <a class="button button-light-selected" href="#">
+        <img class="button-mode" src="images/mode-1.svg" width="16" height="14" alt="Список карточками">
         <span class="visually-hidden">Показать карточки</span>
       </a>
       <a class="button button-light" href="#">
+        <img class="button-mode" src="images/mode-2.svg" width="16" height="14" alt="Одна карточка">
         <span class="visually-hidden">Показать широкую карточку</span>
       </a>
       <a class="button button-light" href="#">
+        <img class="button-mode" src="images/mode-3.svg" width="16" height="14" alt="Список">
         <span class="visually-hidden">Показать список</span>
       </a>
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="Гостиница">
+            <img class="hotel-card-image" src="images/catalog-hotel/hotel-1.jpg" width="300" height="212" alt="Гостиница">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-card-description">Гостиница</p>
@@ -158,7 +161,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="Гостиница">
+            <img class="hotel-card-image" src="images/catalog-hotel/hotel-2.jpg" width="300" height="212" alt="Гостиница">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-card-description">Гостиница</p>
@@ -172,7 +175,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="Гостиница">
+            <img class="hotel-card-image" src="images/catalog-hotel/hotel-3.jpg" width="300" height="212" alt="Гостиница">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel-card-description">Гостиница</p>
@@ -186,7 +189,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="Гостиница">
+            <img class="hotel-card-image" src="images/catalog-hotel/hotel-4.jpg" width="300" height="212" alt="Гостиница">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel-card-description">Гостиница</p>
@@ -216,9 +219,7 @@
           <a class="pagination-link" href="#">5</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
             <span class="visually-hidden">...</span>
-          </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
