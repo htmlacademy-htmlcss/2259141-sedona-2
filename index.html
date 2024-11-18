@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -52,14 +54,14 @@
         <section class="advantages">
           <div class="advantages-container-title">
             <h2 class="visually-hidden">Преимущества</h2>
-            <h2 class="advantages-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+            <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="title-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="advantages-list">
             <li class="advantages-item-container">
               <div class="advantages-image">
                 <h3 class="advantages-lead rectangle-light">Настоящий <br>городок</h3>
-                <p class="advantages-description">Седона - не аттракцион для <br>туристов, там течет своя <br>жизнь</p>
+                <p class="advantages-description">Седона — не аттракцион для <br>туристов, там течет своя <br>жизнь</p>
               </div>
               <img class="advantages-picture" src="images/view-sedona.jpg" width="800" height="385" alt="Вид на Седону">
             </li>
@@ -113,7 +115,7 @@
           <h2 class="title">Заинтересовались?</h2>
           <p class="title-description search-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам
             лучшие предложения гостиниц в Седоне</p>
-          <a class="search-link-button button" href="#">Поиск гостиницы в Седоне</a>
+          <button class="search-link-button button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="page-newsletter">
           <h2 class="title">Подпишитесь на рассылку</h2>
@@ -168,7 +170,7 @@
         </section>
         <section class="footer-contact">
           <h2 class="visually-hidden">Контактный телефон</h2>
-          <a class="contact-phone" href="tel:+78128121212">+7(812) 812-12-12</a>
+          <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-link">
           <h2 class="visually-hidden">Сайт</h2>
@@ -183,7 +185,7 @@
       </div>
     </footer>
   </div>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container visually-hidden">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -195,21 +197,35 @@
             <label class="title-field title-field-check" for="check-in-date">Дата Заезда:</label>
             <input class="auth-form-field field" type="text" id="check-in-date" name="auth-check-in-date"
               placeholder="27 апреля 2020">
-              <span class="text">Мы не можем отправить вас в прошлое.</span>
+            <span class="text text-color">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group field-departure-date">
             <label class="title-field title-field-departure" for="departure-date">Дата Выезда:</label>
-            <input class="auth-form-field field" type="password" id="departure-date" name="auth-departure-date"
+            <input class="auth-form-field field" type="text" id="departure-date" name="auth-departure-date"
               placeholder="1 сентября 2023">
-              <span class="text">На эти даты есть свободные номера. Пока есть.</span>
+            <span class="text">На эти даты есть свободные номера. Пока есть.</span>
           </p>
-          <p class="field-aduils">
+          <p class="field-aduils button-adults">
             <label class="title-field title-field-adults" for="adults">Взрослые:</label>
-            <input class="auth-form-field field" type="text" id="adults" name="auth-adults" placeholder="2">
+            <input class="auth-form-field-adults field" type="text" id="adults" name="auth-adults" placeholder="2">
           </p>
-          <p class="field-children">
-            <label class="title-field title-field-children" for="children">Дети:</label>
-            <input class="auth-form-field field" type="text" id="children" name="auth-children" placeholder="2">
+          <p class="field-children button-children">
+            <span class="title-field-children form-label-icon">
+              <label class="title-field title-field-children" for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                    viewBox="0 0 26 26">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                    <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <input class="auth-form-field-children field" type="text" id="children" name="auth-children"
+              placeholder="2">
           </p>
           <button class="button-light auth-form-search">Найти</button>
         </form>

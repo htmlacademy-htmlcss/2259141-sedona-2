@@ -65,6 +65,7 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 16px;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -86,15 +87,18 @@ body {
   background-repeat: no-repeat;
   min-width: 18px;
   min-height: 18px;
+  margin-top: 1px;
+  margin-left: 2px;
 }
 .navigation-user .navigation-item:not(:last-child) {
-  padding: 20px 12px;
+  padding: 23px 11px 17px 13px;
 }
 .navigation-link-button {
   display: block;
   text-align: center;
   text-decoration: none;
   align-content: center;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -104,7 +108,7 @@ body {
   width: 160px;
   height: 36px;
   background: #756157;
-  margin: 14px 0 14px 20px;
+  margin: 14px 0 14px 22px;
   padding: 0;
 }
 .page-container {
@@ -133,7 +137,6 @@ body {
 .hero-image {
   margin: 51px 371px 25px;
 }
-
 .advantages {
   width: 1200px;
   margin: 0;
@@ -147,6 +150,7 @@ body {
   margin-bottom: 21px;
 }
 .advantages-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -162,6 +166,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
 .advantages-item-container {
   display: flex;
@@ -186,8 +191,11 @@ body {
   background-color: #83B3D333;
 }
 .advantages-lead {
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 62px;
@@ -196,6 +204,7 @@ body {
   margin: 0;
 }
 .title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -205,6 +214,7 @@ body {
   margin-bottom: 20px;
 }
 .title-description {
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -247,8 +257,10 @@ body {
 }
 .item-food {
   background-color:#FFFFFF;
+  margin-top: 2px;
 }
 .services-lead {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700px;
   font-size: 24px;
   line-height: 28px;
@@ -268,6 +280,7 @@ body {
 }
 .search-link-button {
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -278,6 +291,25 @@ body {
   border: #FFFFFF;
   text-decoration: none;
   padding: 8px 50px 8px 50px;
+  cursor: pointer;
+}
+.button-page {
+  width: 232px;
+  padding: 8px 50px 8px 50px;
+  border-radius: 0px 4px 4px 0px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+ .page-form {
+  display: flex;
 }
 .page-newsletter {
   display: flex;
@@ -287,7 +319,7 @@ body {
   background-color: #FFFFFF;
   background-size: 100% auto;
   margin: 0;
-  padding: 96px 258px;
+  padding: 96px 258px 104px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -317,7 +349,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 5px 0;
+  padding: 2px 0 8px;
   list-style: none;
 }
 .catalog-select {
@@ -347,6 +379,7 @@ body {
 }
 .inner-header-title {
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -354,14 +387,15 @@ body {
   margin: 0 70px 8px;
   padding-top: 35px;
 }
-
-.contact-phone {
+.footer-contact .contact-phone {
+  display: flex;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-align: center;
   color: inherit;
   text-decoration: none;
+  padding: 2px 0 8px 3px;
 }
 .visually-hidden {
   position: absolute;
@@ -375,23 +409,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.main-index ul {
-  list-style: none;
-}
 .logo-link {
   display: flex;
-  padding: 8.5px 0;
-}
-.contact-phone {
-  display: flex;
-  padding: 5px 0;
+  padding: 5px 0 8.5px;
 }
 .services-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .sorting-container {
   display: flex;
   align-items: center;
@@ -404,11 +430,13 @@ body {
   height: 48px;
 }
 .search-resuit {
-  padding-right: 200px;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: left;
+  text-transform: uppercase;
+  margin-right: 200px;
 }
 .pagination {
   display: flex;
@@ -423,6 +451,7 @@ body {
   display: block;
   box-sizing: border-box;
   padding: 11px 18px;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   width: 60px;
   height: 60px;
@@ -449,6 +478,7 @@ body {
   margin: 0 70px 80px;
   padding: 0;
   gap: 20px;
+  border: 1px solid #E6E6E6;
 }
 .hotel-card {
   display: flex;
@@ -471,6 +501,7 @@ body {
   margin: 0;
 }
 .hotel-card-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -478,21 +509,22 @@ body {
   margin: 0;
 }
 .hotel-card-rating {
-  font-family: PT Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: center;
-color: #333333;
-border-radius: 4px;
-background-color: #F2F2F2;
-text-transform: uppercase;
-padding: 9px 22px 8px 23px;
-margin: 0;
-border: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
+  margin: 0;
+  border: #FFFFFF;
 }
 .hotel-card-button {
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -505,7 +537,7 @@ border: #FFFFFF;
   margin-right: 20px;
 }
 .hotel-card-favourite {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
@@ -554,6 +586,10 @@ border: #FFFFFF;
 }
 .breadcrumbs-link {
   display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
   margin-right: 10px;
   color: #FFFFFF;
   text-decoration: none;
@@ -584,7 +620,7 @@ border: #FFFFFF;
   background-color: #FFFFFF4D;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -30px;
+  bottom: -32px;
 }
 .rectangle-light {
   position: relative;
@@ -598,7 +634,7 @@ border: #FFFFFF;
   background-color: #0000004D;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -30px;
+  bottom: -32px;
 }
 .rectangle-dark {
   position: relative;
@@ -626,9 +662,7 @@ border: #FFFFFF;
   background-color: #7DB54F;
   color: #FFFFFF4D;
 }
-.social-icon:hover {
-  fill: #68A2CA;
-}
+.social-icon:hover,
 .social-icon:focus {
   fill: #68A2CA;
 }
@@ -664,7 +698,7 @@ border: #FFFFFF;
  }
  .field {
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -675,24 +709,7 @@ border: #FFFFFF;
   width: 452px;
   border: 2px solid #F2F2F2;
  }
- .button-page {
-  width: 232px;
-  padding: 8px 50px 8px 50px;
-  border-radius: 0px 4px 4px 0px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  font-family: PT Sans;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 0;
-  cursor: pointer;
- }
- .page-form {
-  display: flex;
- }
+
  .field:hover {
   border-color: #68A2CA;
  }
@@ -775,7 +792,7 @@ border: #FFFFFF;
   display: flex;
 }
 .catalog-filter-title {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -804,7 +821,7 @@ border: #FFFFFF;
   box-sizing: border-box;
   padding: 16px 20px 12px;
 }
- .control-mark {
+.control-mark {
   position: absolute;
   left: 0;
   width: 20px;
@@ -813,18 +830,21 @@ border: #FFFFFF;
   background-color: #FFFFFF;
   cursor: pointer;
  }
- .control {
+.control {
   position: relative;
   display: block;
  }
- .control:hover .control-mark {
+.control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.5);
  }
- .control:active .control-mark {
+.control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
  }
+.control:focus .control-mark {
+  border: 3px solid #83B3D3;
+ }
 .control-label {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -848,7 +868,7 @@ border: #FFFFFF;
   padding: 8px 50px;
   border-radius: 4px;
   background-color: #82B3D3;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -863,7 +883,7 @@ border: #FFFFFF;
   height: 36px;
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -896,20 +916,18 @@ border: #FFFFFF;
 .catalog-filter-item:not(:last-child) {
   padding-bottom: 16px;
  }
-
- .select {
+.select {
   position: relative;
   display: flex;
   align-items: center;
   width: 292px;
   margin-right: auto;
 }
-
 .select-control {
   width: 100%;
   padding: 14px 20px;
   padding-right: 52px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -940,7 +958,7 @@ border: #FFFFFF;
 }
 .control-input-min::placeholder,
 .control-input-max::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -953,7 +971,7 @@ border: #FFFFFF;
   color: rgba(0, 0, 0, 0.3);
   right: 165px;
   top: 12px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -964,7 +982,7 @@ border: #FFFFFF;
   color: rgba(0, 0, 0, 0.3);
   right: 20px;
   top: 12px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -977,7 +995,6 @@ border: #FFFFFF;
   display: flex;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1012,7 +1029,7 @@ border: #FFFFFF;
   margin-bottom: 64px;
   color: #000000;
   text-transform: uppercase;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1029,21 +1046,37 @@ border: #FFFFFF;
 .field-check-in-date,
 .field-departure-date {
   grid-column: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .text {
   display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
   padding-left: 157px;
+  padding-top: 4px;
+  color: #333333;
+}
+.text-color {
+  color: #FF5757;
 }
 .auth-form-search {
   grid-column: 1/-1;
 }
 .field-group {
+  position: relative;
   margin: 0;
 }
 .field-group input {
   width: 440px;
   height: 48px;
   box-sizing: border-box;
+  padding: 12px 18px;
+  background-color: #F2F2F2;
 }
 .field-aduils input,
 .field-children input {
@@ -1054,6 +1087,9 @@ border: #FFFFFF;
 .field-aduils,
 .field-children {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .title-field-check {
   padding-right: 24px;
@@ -1061,8 +1097,7 @@ border: #FFFFFF;
 .title-field-departure {
   padding-right: 18px;
 }
-.title-field-adults,
-.title-field-children {
+.title-field-adults {
   padding-right: 46px;
 }
 .auth-form-search {
@@ -1070,7 +1105,7 @@ border: #FFFFFF;
   height: 60px;
   border-radius: 10px;
   background-color: #83B3D3;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1080,15 +1115,146 @@ border: #FFFFFF;
   color: #FFFFFF;
   border: 0;
   cursor: pointer;
+  margin-top: 25px;
 }
 .title-field {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
   text-transform: capitalize;
 }
+.auth-form-field::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+.auth-form-field-adults::placeholder,
+.auth-form-field-children::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.field-group::after {
+  position: absolute;
+  content: url(../images/date-modal.svg);
+  width: 20px;
+  height: 20px;
+  left: 537px;
+  top: 14px;
+}
+.button-adults {
+  position: relative;
+}
+.button-adults::before {
+  position: absolute;
+  content: url(../images/button-minus.svg);
+  width: 20px;
+  height: 20px;
+  left: 147px;
+}
+.button-adults::after {
+  position: absolute;
+  content: url(../images/button-plus.svg);
+  width: 20px;
+  height: 20px;
+  left: 218px;
+}
+.button-children {
+  position: relative;
+}
+.button-children::before {
+  position: absolute;
+  content: url(../images/button-minus.svg);
+  width: 20px;
+  height: 20px;
+  left: 141px;
+}
+.button-children::after {
+  position: absolute;
+  content: url(../images/button-plus.svg);
+  width: 20px;
+  height: 20px;
+  left: 212px;
+}
+.auth-form-field-children,
+.auth-form-field-adults,
+.auth-form-field {
+  border-radius: 4px;
+}
+.tooltip {
+  position: absolute;
+  margin-top: 0px;
+  margin-right: 46px;
+  width: 26px;
+  height: 26px;
+}
+.title-field-children {
+  padding-right: 10px;
+}
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83B3D3;
+  display: block;
+}
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-weight: normal;
+  text-align: left;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -172px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+  box-shadow: 0px 25px 50px 0px #00000026;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.form-label-icon {
+  position: relative;
+  padding-right: 26px;
+}
+.tooltip-text::before {
+  position: absolute;
+  content: url(../images/triangle-modal.svg);
+  width: 19px;
+  height: 9px;
+  margin-left: 96px;
+  bottom: 139px;
+}
+
+
+
+
+
+
 
 
 
