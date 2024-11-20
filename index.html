@@ -187,7 +187,13 @@
   </div>
   <div class="modal-container visually-hidden">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
+        <svg class="close-button" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="52"
+          height="52" fill="none" viewBox="0 0 52 52">
+          <circle class="close-button" cx="26" cy="26" r="26" fill="#F2F2F2" />
+          <path class="close-button-close" fill="#000"
+            d="m33.49 20.78-1.3-1.29-5.7 5.7-5.7-5.7-1.3 1.3 5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" />
+        </svg>
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -196,18 +202,32 @@
           <p class="field-group field-check-in-date">
             <label class="title-field title-field-check" for="check-in-date">Дата Заезда:</label>
             <input class="auth-form-field field" type="text" id="check-in-date" name="auth-check-in-date"
-              placeholder="27 апреля 2020">
+              placeholder="27 апреля 2020" required>
             <span class="text text-color">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group field-departure-date">
             <label class="title-field title-field-departure" for="departure-date">Дата Выезда:</label>
             <input class="auth-form-field field" type="text" id="departure-date" name="auth-departure-date"
-              placeholder="1 сентября 2023">
+              placeholder="1 сентября 2023" required>
             <span class="text">На эти даты есть свободные номера. Пока есть.</span>
           </p>
-          <p class="field-aduils button-adults">
+          <p class="field-aduils">
             <label class="title-field title-field-adults" for="adults">Взрослые:</label>
-            <input class="auth-form-field-adults field" type="text" id="adults" name="auth-adults" placeholder="2">
+            <input class="auth-form-field-adults field" type="text" id="adults" name="auth-adults" placeholder="2" required>
+            <button class="button-adults-minus" type="button">
+              <svg class="button-minus-adults" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
+                fill="none" viewBox="0 0 14 2">
+                <path class="adults-minus" fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z" />
+              </svg>
+              <span class="visually-hidden">Уменьшить количество</span>
+            </button>
+            <button class="button-adults-plus" type="button">
+              <svg class="button-plus-adults" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                fill="none" viewBox="0 0 14 14">
+                <path class="adults-plus" fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+              </svg>
+              <span class="visually-hidden">Увеличить количество</span>
+            </button>
           </p>
           <p class="field-children button-children">
             <span class="title-field-children form-label-icon">
@@ -220,14 +240,29 @@
                     <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18
                   лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </span>
             <input class="auth-form-field-children field" type="text" id="children" name="auth-children"
-              placeholder="2">
+              placeholder="2" required>
+            <button class="button-children-minus" type="button">
+              <svg class="button-minus-children" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
+                fill="none" viewBox="0 0 14 2">
+                <path class="children-minus" fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z" />
+              </svg>
+              <span class="visually-hidden">Уменьшить количество</span>
+            </button>
+            <button class="button-children-plus" type="button">
+              <svg class="button-plus-children" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                fill="none" viewBox="0 0 14 14">
+                <path class="children-plus" fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+              </svg>
+              <span class="visually-hidden">Увеличить количество</span>
+            </button>
           </p>
-          <button class="button-light auth-form-search">Найти</button>
+          <button class="button-light auth-form-search" type="submit">Найти</button>
         </form>
       </section>
     </div>
